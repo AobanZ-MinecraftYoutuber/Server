@@ -2,8 +2,7 @@ const WebSocket = require("ws");
 const Database = require("better-sqlite3");
 const argon2 = require("argon2");
 const { randomUUID } = require("crypto");
-
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 // ===============================
 // DATABASE
